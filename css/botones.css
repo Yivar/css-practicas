@@ -1,0 +1,357 @@
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+*:after,*:before{
+	box-sizing: border-box;
+}
+body{
+  font: 18px sans-serif ;
+}
+header{
+  text-align: center;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
+.col-flex-1{
+  flex: 1;
+  padding:5px 0;
+}
+.content-btn{
+  display: flex;
+  justify-content: space-around;
+  padding: .5em;
+  margin: 0px 10px;
+  background-color: rgba(236, 236, 236, 0.65);
+}
+.boton{
+  padding-bottom: 1em;
+}
+.boton button{
+  background-color: transparent;
+  padding: 0 8.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 3rem;
+  height: 100px;
+  line-height: 100px;
+}
+.boton button:focus{
+  background-color: rgba(0, 0, 0, 0.25);
+  color: hsl(0, 0%, 100%);
+  animation: example 5s;
+}
+@keyframes example {
+  0% {
+    box-shadow: 0 0 0 1rem rgba(95, 95, 95, 0.5);
+    color: hsl(0, 0%, 65%);
+  }
+  50% {
+    box-shadow: 0 0 0 3.2rem rgba(95, 95, 95, 0.1);
+    color: hsl(0, 0%, 85%);
+  }
+}
+
+/*
+primer botones
+*/
+:root{
+  --color-gris:rgba(75, 75, 75, 0.603);
+}
+.col-flex-1:nth-of-type(1) button {
+  border: none;
+  border-radius: 2px;
+  padding: 0 1.5rem;
+  height: 36px;
+  line-height: 36px;
+  transition: box-shadow 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.col-flex-1:nth-of-type(1) button:nth-child(1){
+  box-shadow:  0 -2px 2px 0 rgba(0, 0, 0, 0.14),
+  0 1px 5px 0 rgba(0, 0, 0, 0.12), 
+  0 -3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.col-flex-1:nth-of-type(1) button:nth-child(1):hover{
+  box-shadow: 0 -3px 3px 0 rgba(0, 0, 0, 0.14),
+  0 1px 7px 0 rgba(0, 0, 0, 0.12), 
+  0 -3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.col-flex-1:nth-of-type(1) button:nth-child(2){
+  box-shadow:  2px 0 2px 0 rgba(0, 0, 0, 0.14),
+  1px 0 5px 0 rgba(0, 0, 0, 0.12), 
+  3px 0 1px -2px rgba(0, 0, 0, 0.2);
+}
+.col-flex-1:nth-of-type(1) button:nth-child(2):hover{
+  box-shadow:  3px 0 3px 0 rgba(0, 0, 0, 0.14),
+  1px 0 7px 0 rgba(0, 0, 0, 0.12), 
+  3px 0 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.col-flex-1:nth-of-type(1) button:nth-child(3){
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+  0 1px 5px 0 rgba(0, 0, 0, 0.12),
+  0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.col-flex-1:nth-of-type(1) button:nth-child(3):hover{
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+  0 1px 7px 0 rgba(0, 0, 0, 0.12),
+  0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.col-flex-1:nth-of-type(1) button:nth-child(4){
+  box-shadow:  -2px 0 2px 0 rgba(0, 0, 0, 0.14),
+  -1px 0 5px 0 rgba(0, 0, 0, 0.12), 
+  -3px 0 1px -2px rgba(0, 0, 0, 0.2);
+}
+.col-flex-1:nth-of-type(1) button:nth-child(4):hover{
+  box-shadow:  -3px 0 3px 0 rgba(0, 0, 0, 0.14),
+  -1px 0 7px 0 rgba(0, 0, 0, 0.12), 
+  -3px 0 1px -1px rgba(0, 0, 0, 0.2);
+}
+
+.col-flex-1:nth-of-type(1) button:nth-child(5){
+  box-shadow: -2px 0 2px 0 rgba(0, 0, 0, 0.14),
+  -1px 0 5px 0 rgba(0, 0, 0, 0.12), 
+  -3px 0 1px -2px rgba(0, 0, 0, 0.2),
+  2px 0 2px 0 rgba(0, 0, 0, 0.14),
+  1px 0 5px 0 rgba(0, 0, 0, 0.12), 
+  3px 0 1px -2px rgba(0, 0, 0, 0.2);
+}
+.col-flex-1:nth-of-type(1) button:nth-child(5):hover{
+  box-shadow: -3px 0 3px 0 rgba(0, 0, 0, 0.14),
+  -1px 0 7px 0 rgba(0, 0, 0, 0.12), 
+  -3px 0 1px -1px rgba(0, 0, 0, 0.2),
+  3px 0 3px 0 rgba(0, 0, 0, 0.14),
+  1px 0 7px 0 rgba(0, 0, 0, 0.12), 
+  3px 0 1px -1px rgba(0, 0, 0, 0.2)
+}
+/*
+segundo botones
+*/
+.col-flex-1:nth-of-type(2) button {
+  border:none;
+  border-radius: 2px;
+  padding: 0 1.5rem;
+  height: 36px;
+  line-height: 36px;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.col-flex-1:nth-of-type(2) button:nth-child(1){
+  box-shadow: 0px 2px var(--color-gris) inset;
+}
+.col-flex-1:nth-of-type(2) button:nth-child(1):hover{
+  box-shadow: 0px 36px var(--color-gris) inset;
+  color: #ffffff;
+}
+
+.col-flex-1:nth-of-type(2) button:nth-child(2){
+  box-shadow: -2px 0px var(--color-gris) inset;
+}
+.col-flex-1:nth-of-type(2) button:nth-child(2):hover{
+  box-shadow: -91px 0px var(--color-gris) inset;
+  color: #ffffff;
+}
+
+.col-flex-1:nth-of-type(2) button:nth-child(3){
+  box-shadow: 0px -2px var(--color-gris) inset;
+}
+.col-flex-1:nth-of-type(2) button:nth-child(3):hover{
+  box-shadow: 0px -36px var(--color-gris) inset;
+  color: #ffffff;
+}
+
+.col-flex-1:nth-of-type(2) button:nth-child(4){
+  box-shadow: 2px 0px var(--color-gris) inset;
+}
+.col-flex-1:nth-of-type(2) button:nth-child(4):hover{
+  box-shadow: 91px 0px var(--color-gris) inset;
+  color: #ffffff;
+}
+
+.col-flex-1:nth-of-type(2) button:nth-child(5){
+  box-shadow: 2px 0px var(--color-gris) inset,-2px 0px var(--color-gris) inset;
+}
+.col-flex-1:nth-of-type(2) button:nth-child(5):hover{
+  box-shadow: 54.03px 0 0 0 var(--color-gris) inset,-54.03px 0 0 0 var(--color-gris) inset;
+  color: #ffffff;
+}
+/*
+tercer botones
+*/
+.col-flex-1:nth-of-type(3) button {
+  border:none;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 0 1.5rem;
+  height: 36px;
+  line-height: 36px;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.col-flex-1:nth-of-type(3) button:hover{
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+/*
+tercer botones
+*/
+.col-flex-1:nth-of-type(4) button {
+  border:none;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 0 1.5rem;
+  height: 36px;
+  line-height: 36px;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.col-flex-1:nth-of-type(4) button:hover{
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.12), 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+/*
+quito botones
+*/
+.col-flex-1:nth-of-type(5) button {
+  border:none;
+  background-color:transparent;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 0 1.5rem;
+  height: 36px;
+  line-height: 36px;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.col-flex-1:nth-of-type(5) button:focus{
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+/*
+sexto botones
+*/
+.col-flex-1:nth-of-type(6) button {
+  border:none;
+  background-color:#ffffff;
+  border-radius: 2px;
+  padding: 0 1.5rem;
+  height: 36px;
+  line-height: 36px;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.col-flex-1:nth-of-type(6) button:focus{
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.20);
+}
+/*
+septimo botones
+*/
+.col-flex-1:nth-of-type(7) button {
+  border:none;
+  background-color:#ffffff;
+  border-radius: 2px;
+  padding: 0 1.5rem;
+  height: 36px;
+  line-height: 36px;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.col-flex-1:nth-of-type(7) button:hover{
+  background-color:rgba(0, 0, 0, 0.05);
+}
+.col-flex-1:nth-of-type(7) button:nth-child(1){
+  box-shadow: -0.2rem -0.2rem 0 0 rgba(0, 0, 0, 0.20);
+}
+.col-flex-1:nth-of-type(7) button:nth-child(2){
+  box-shadow: 0.2rem -0.2rem 0 0 rgba(0, 0, 0, 0.20);
+}
+.col-flex-1:nth-of-type(7) button:nth-child(3){
+  box-shadow: 0.2rem 0.2rem 0 0 rgba(0, 0, 0, 0.20);
+}
+.col-flex-1:nth-of-type(7) button:nth-child(4){
+  box-shadow: -0.2rem 0.2rem 0 0 rgba(0, 0, 0, 0.20);
+}
+.col-flex-1:nth-of-type(7) button:nth-child(5){
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.20);
+}
+/*
+octavo botones
+*/
+.col-flex-1:nth-of-type(8) button {
+  border:1px solid #a5a5a5;
+  border-radius: 5px;
+  padding: 0 1.5rem;
+  height: 36px;
+  line-height: 36px;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.col-flex-1:nth-of-type(8) button:nth-child(1):hover{
+  animation: pulse1 1s;
+  box-shadow: 0 0 0 1.2rem rgba(255,255,255, 0);
+}
+@keyframes pulse1 {
+  0% { box-shadow: 0 0 0 0 rgba(107, 107, 107, 0.616); }
+}
+
+.col-flex-1:nth-of-type(8) button:nth-child(2):focus{
+  box-shadow: 0 0 0 0.2rem rgba(0,0,0, 0.20);
+  animation: pulse2 500ms;
+}
+@keyframes pulse2 {
+  0% {box-shadow: 0 0 0 0.7rem rgba(0, 0, 0, 0.055)}
+  50% {box-shadow: 0 0 0 1.3rem rgba(0, 0, 0, 0.07)}
+}
+
+.col-flex-1:nth-of-type(8) button:nth-child(3):focus{
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.20);
+  animation: example3 500ms;
+}
+@keyframes example3 {
+  0% {box-shadow: inset 0 0 0 0.4rem rgba(75, 75, 75, 0.25);color: hsl(0, 0%, 24%);}
+  50% {box-shadow: inset 0 0 0 1.2rem rgba(75, 75, 75, 0.50);color: hsl(0, 0%, 100%);}
+}
+
+.col-flex-1:nth-of-type(8) button:nth-child(4){
+  border: none;
+  background-color: transparent;
+}
+.col-flex-1:nth-of-type(8) button:nth-child(4):focus{
+  background-color: hsla(0, 0%, 40%, 0.884);
+  color: #ffffff;
+  box-shadow:0 0 0 1.2rem rgba(255, 255, 255, 0.0);
+  animation: example4 500ms cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+@keyframes example4 {
+  0% {
+    box-shadow:0 0 0 0.4rem rgba(0, 0, 0, 0.055);color: hsl(0, 0%, 24%);
+    color: hsl(0, 0%, 55%);
+  }
+  50% {
+    box-shadow:0 0 0 1.2rem rgba(0, 0, 0, 0.075);color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 75%);
+  }
+}
+/*
+noveno botones
+*/
+.col-flex-1:nth-of-type(9) button {
+  border:1px solid #a5a5a5;
+  border-radius: 18px;
+  /*background: linear-gradient(90deg,red ,green );*/
+  padding: 0 1.5rem;
+  height: 36px;
+  line-height: 36px;
+  transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.col-flex-1:nth-of-type(9) button:hover{
+  background-color:rgba(0, 0, 0, 0.05);
+}
+
